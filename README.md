@@ -16,3 +16,20 @@ http://repo.garl.ch/pub/
 
 ***Note***: a RedHat bugzilla request have been submitted to include the RPM in EPEL and Fedora. 
 If you can, please sponsor it: https://bugzilla.redhat.com/show_bug.cgi?id=1162234
+
+## Example configuration file 
+
+The file is /etc/securepass.conf:
+
+```
+[default]
+app_id = << YOUR APPLICATION ID >>
+app_secret = << YOUR APPLICATION SECRET >>
+endpoint = https://beta.secure-pass.net/
+
+[nss]
+realm = login.farm
+default_gid = 100
+default_home = "/home"
+default_shell = "/bin/bash"
+```
