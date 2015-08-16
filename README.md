@@ -12,7 +12,7 @@ Useful links:
 
 If you use CentOS/RHEL/Scientific Linux, you can find the RPMS for version 6 and 7 here:
 
-(http://repo.garl.ch/pub/)
+http://repo.garl.ch/pub/
 
 ***Note***: a RedHat bugzilla request have been submitted to include the RPM in EPEL and Fedora. 
-If you can, please sponsor it: (https://bugzilla.redhat.com/show_bug.cgi?id=1162234)
+If you can, please sponsor it: https://bugzilla.redhat.com/show_bug.cgi?id=1162234
