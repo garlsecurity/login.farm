@@ -12,7 +12,7 @@ Useful links:
 # PAM/NSS Module
 
 Debian "jessie" and Ubuntu from 15.04 have the module available, you can install libnss-securepass.
-*** Note ***: Latest Ubuntu LTS 14.04 has a request for backport on:
+**Note**: Latest Ubuntu LTS 14.04 has a request for backport on:
 https://bugs.launchpad.net/trusty-backports/+bug/1403181
 
 
@@ -20,7 +20,7 @@ If you use CentOS/RHEL/Scientific Linux, you can find the RPMS for version 6 and
 
 http://repo.garl.ch/pub/
 
-***Note***: a RedHat bugzilla request have been submitted to include the RPM in EPEL and Fedora. 
+**Note**: a RedHat bugzilla request have been submitted to include the RPM in EPEL and Fedora. 
 If you can, please sponsor it: https://bugzilla.redhat.com/show_bug.cgi?id=1162234
 
 
