@@ -48,6 +48,11 @@ list of users (coma separated).
 
 # PAM/NSS Module
 
+Unix identities can be looked up in login.farm through the NSS module, so that you can have a 
+consistant UID, GID, shell and home directory across all your instances. The PAM module can be 
+setup so that the login.farm will handle the authentication in your Linux system, leveraging the 
+built-in 2FA of login.farm.
+
 Debian "jessie" and Ubuntu from 15.04 have the module available, you can install libnss-securepass.
 **Note**: Latest Ubuntu LTS 14.04 has a request for backport on:
 https://bugs.launchpad.net/trusty-backports/+bug/1403181
