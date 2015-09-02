@@ -1,6 +1,12 @@
 # login.farm Documentation
 
-Contributions are welcome, please contact me on gpaterno@gpaterno.com
+The ***login.farm*** project is meant to be a secure identity manager for distributed identities.
+What if you have virtual machines on Amazon, Rackspace or local premises? What if you have
+some different web apps but you don't really have an openldap or active directory as it's overkill?
+The project is here to help! It comes with built-in 2FA for Android and iOS to make sure you'll never
+be hacked by smart bots.
+
+Contributions to the docuemntation are welcome, please contact me on gpaterno@gpaterno.com
 
 Useful links:
 
@@ -9,7 +15,7 @@ Useful links:
 * [Wordpress Plugin](https://github.com/garlsecurity/wp-securepass)
 * [Drupal Plugin](https://github.com/garlsecurity/securepass-drupal)
 
-# Configure
+# Configure on Linux
 
 The file is /etc/securepass.conf:
 
@@ -67,3 +73,13 @@ Then configure your sshd_config by adding the following line:
 AuthorizedKeysCommand /usr/bin/sp-sshkey
 ```
 
+The openssh helper is able to generate authorized keys for root user if you specify in
+/etc/securepass.conf the following:
+
+```
+[ssh]
+
+root = user1,user2
+```
+
+This will automatically allow user1 and user2 keys to login as root.
