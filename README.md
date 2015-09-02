@@ -40,3 +40,14 @@ default_gid = 100
 default_home = "/home"
 default_shell = "/bin/bash"
 ```
+
+## SSH Configuration
+
+The securepass tools have an openssh filter that can be used to automatically retrive
+users' ssh keys from login.farm. First of all, install your securepass tools via RPM/deb
+or **pip install securepass**.
+
+Then configure your sshd_config by adding the following line:
+```
+AuthorizedKeysCommand /usr/bin/sp-sshkey
+```
