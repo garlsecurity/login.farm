@@ -9,22 +9,7 @@ Useful links:
 * [Wordpress Plugin](https://github.com/garlsecurity/wp-securepass)
 * [Drupal Plugin](https://github.com/garlsecurity/securepass-drupal)
 
-# PAM/NSS Module
-
-Debian "jessie" and Ubuntu from 15.04 have the module available, you can install libnss-securepass.
-**Note**: Latest Ubuntu LTS 14.04 has a request for backport on:
-https://bugs.launchpad.net/trusty-backports/+bug/1403181
-
-
-If you use CentOS/RHEL/Scientific Linux, you can find the RPMS for version 6 and 7 here:
-
-http://repo.garl.ch/pub/
-
-**Note**: a RedHat bugzilla request have been submitted to include the RPM in EPEL and Fedora. 
-If you can, please sponsor it: https://bugzilla.redhat.com/show_bug.cgi?id=1162234
-
-
-## Example configuration file 
+# Configure
 
 The file is /etc/securepass.conf:
 
@@ -41,13 +26,44 @@ default_home = "/home"
 default_shell = "/bin/bash"
 ```
 
-## SSH Configuration
+An automated configuration script is available in the securepass tools and is named **sp-config**.
+This will allow to fully automate the deploy of securepass in any environment, ex: kickstart, preseed, 
+cloud-init (OpenStack) or from your favorite automation tool (ansible, puppet, chef, ...)
+
+The syntax is:
+
+```
+sp-config -i <<YOUR APPLICATION ID>> -s  <<YOUR APPLICATION SECRET>> -r login.farm 
+```
+
+an optional **--root** is available to automatically populate root ssh keys with the
+list of users (coma separated).
+
+
+# PAM/NSS Module
+
+Debian "jessie" and Ubuntu from 15.04 have the module available, you can install libnss-securepass.
+**Note**: Latest Ubuntu LTS 14.04 has a request for backport on:
+https://bugs.launchpad.net/trusty-backports/+bug/1403181
+
+
+If you use CentOS/RHEL/Scientific Linux, you can find the RPMS for version 6 and 7 here:
+
+http://repo.garl.ch/pub/
+
+**Note**: a RedHat bugzilla request have been submitted to include the RPM in EPEL and Fedora. 
+If you can, please sponsor it: https://bugzilla.redhat.com/show_bug.cgi?id=1162234
+
+
+# SSH Configuration
 
 The securepass tools have an openssh filter that can be used to automatically retrive
 users' ssh keys from login.farm. First of all, install your securepass tools via RPM/deb
 or **pip install securepass**.
 
 Then configure your sshd_config by adding the following line:
+
 ```
 AuthorizedKeysCommand /usr/bin/sp-sshkey
 ```
+
