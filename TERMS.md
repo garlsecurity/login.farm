@@ -11,8 +11,8 @@ It is backed up using the same procedures of other services.
 
 That said, login.farm is provided as a service with NO GUARANTEES, NO WARRANTIES, 
 NO SUPPORT. ***The use of login.farm is only under your responsibility***. 
-In no way Giuseppe Paterno', GARL or other project members are liable for 
-the operation, loss of data/information, financial losses, etc...
+In no way Giuseppe Paterno', GARL or other project members are responsible for 
+the service or liable for the operation, loss of data/information, financial losses, etc...
 
 If you are seeking for a supported, enterprise-grade service backed by
 an insurance policy for any loss, please consider [SecurePass](http://www.secure-pass.net).
