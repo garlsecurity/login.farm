@@ -42,10 +42,16 @@ If you can, please sponsor it:
 * https://bugzilla.redhat.com/show_bug.cgi?id=1259061
 
 ## openSUSE/SLES
-If you use openSUSE/SLES, you can find the repositories on OBS:
+If you use openSUSE/SLES, you can find the repositories on OBS.
 
-* SLES 12: zypper ar http://download.opensuse.org/repositories/home:/gpaterno:/SecurePass/SLE_12/home:gpaterno:SecurePass.repo
-* openSUSE 13.2: zypper ar http://download.opensuse.org/repositories/home:/gpaterno:/SecurePass/openSUSE_13.2/home:gpaterno:SecurePass.repo
+SLES 12: 
+```
+zypper ar http://download.opensuse.org/repositories/home:/gpaterno:/SecurePass/SLE_12/home:gpaterno:SecurePass.repo
+```
+openSUSE 13.2
+```
+zypper ar http://download.opensuse.org/repositories/home:/gpaterno:/SecurePass/openSUSE_13.2/home:gpaterno:SecurePass.repo
+```
 
 ## Sources
 
