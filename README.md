@@ -8,7 +8,9 @@ Or perhaps many web apps here and there, but you don't really have an openldap o
 The ***login.farm*** project is here to help centralizing and managing your identities.
 It comes also with a built-in multifactor authentication.
 
-Contributions to the docuemntation are welcome, please contact me on gpaterno@gpaterno.com
+If you're willing to help, contributions are welcome: check the [TODO list](TODO.md).
+Please contact me on gpaterno@gpaterno.com for coordination.
+
 
 Useful links:
 
