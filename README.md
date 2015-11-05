@@ -99,9 +99,6 @@ setup so that the login.farm will handle the authentication in your Linux system
 built-in 2FA of login.farm.
 
 
-
-
-
 # SSH Configuration
 
 The securepass tools have an openssh filter that can be used to automatically retrive
@@ -125,3 +122,20 @@ root = user1,user2
 ```
 
 This will automatically allow user1 and user2 keys to login as root.
+
+# Example API call
+
+Example auth API call using CURL from shell.
+
+```
+USERNAME=user@login.farm
+PASSWORD=00000
+APP_ID="appid@login.farm"
+APP_SECRET="<<my_app_secret>>"
+
+curl -X POST                                  \
+     -d "USERNAME=$USERNAME&SECRET=$PASSWORD" \
+     -H "X-SecurePass-App-ID: $APP_ID"          \
+     -H "X-SecurePass-App-Secret: $APP_SECRET"  \
+     https://beta.secure-pass.net//api/v1/users/auth
+```
