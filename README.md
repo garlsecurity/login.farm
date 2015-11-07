@@ -14,6 +14,7 @@ Please contact me on gpaterno@gpaterno.com for coordination.
 
 Useful links:
 
+* [Discussion forum](https://groups.google.com/d/forum/loginfarm)
 * [NSS and PAM modules](https://github.com/garlsecurity/nss_securepass)
 * [Command line tools](https://github.com/garlsecurity/securepass-tools)
 * [Wordpress Plugin](https://github.com/garlsecurity/wp-securepass)
