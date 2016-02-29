@@ -34,8 +34,14 @@ https://bugs.launchpad.net/trusty-backports/+bug/1403181
 If you use CentOS/RHEL/Scientific Linux, you can find the RPMS for version 6 and 7 here:
 http://repo.garl.ch/pub/
 
+### CentOS/RHEL 6
 ```
-rpm -ihv http://repo.garl.ch/pub/7/x86_64/garl-release-1-0.noarch.rpm
+curl -o /etc/yum.repos.d/securepass.repo http://download.opensuse.org/repositories/home:/gpaterno:/SecurePass/RHEL_6/home:gpaterno:SecurePass.repo
+```
+
+### CentOS/RHEL 7
+```
+curl -o /etc/yum.repos.d/securepass.repo http://download.opensuse.org/repositories/home:/gpaterno:/SecurePass/RHEL_7/home:gpaterno:SecurePass.repo
 ```
 
 **Note**: a RedHat bugzilla request have been submitted to include the RPM in EPEL and Fedora. 
